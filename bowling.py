@@ -43,7 +43,7 @@ def getPinsHit(plyr, onlyOne = False):
         return ('_', 'X')
     elif firstHit == 0:
         delay()
-        print('HA! YOU SUCK!')
+        print("It's okay! Try again!")
     elif onlyOne is True:
         return (firstHit, 0)
     delay()
@@ -57,22 +57,11 @@ def getPinsHit(plyr, onlyOne = False):
         return (firstHit, '/')
     elif totalPinsHit == 0:
         delay()
-        print('HAHAHA!!!!!!')
-        delay()
-        print('HAHAHAHAHAHAHAAHAHAHAHAHAHAHAAHAHAHA!!')
-        delay()
-        print('AHAHAHAHAHAAHAHAHA!!!!')
-        delay()
-        print('YOUUUU')
-        delay()
-        print('SUCKKKK!!!')
-        delay()
-        print()
-        print('GUTTER BAAAAAAALLLLLLLL!!!!!!!!!!')
+        print("Gutter ball")
         return (0, 0)
     elif secndHit == 0:
         delay()
-        print('HA! YOU SUCK!')
+        print("That's rough buddy...")
     delay()
     return (firstHit, secndHit)
 
@@ -84,7 +73,7 @@ def getFirstHit():
         try:
             if dumbInput:
                 delay()
-                firstHit = int(input('Please enter something not retarded (0 - 10): '))
+                firstHit = int(input('Please enter a number between 0 and 10: '))
                 if firstHit < 0 or firstHit > 10:
                     raise ValueError
             else:
@@ -94,7 +83,7 @@ def getFirstHit():
             typo = False
         except ValueError:
             delay()
-            print('aRe YoU StUpiD????')
+            print("Sorry your computer didn't like that.")
             dumbInput = True
     return firstHit
 
@@ -106,7 +95,7 @@ def getSecndHit(firstHit):
         try:
             if dumbInput:
                 delay()
-                secndHit = int(input('Please enter the correct number... retard: '))
+                secndHit = int(input('Please enter the correct number: '))
                 if secndHit < 0 or secndHit > 10:
                     raise ValueError
                 if (firstHit + secndHit) > 10:
@@ -121,7 +110,7 @@ def getSecndHit(firstHit):
             typo = False
         except ValueError:
             delay()
-            print('aRe YoU StUpiD????')
+            print("Sorry your computer didn't like that.")
             dumbInput = True
     return secndHit
 

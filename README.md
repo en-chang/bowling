@@ -1,7 +1,10 @@
-NSFW
+This is a little program that serves as bowling calculator that I quickly put up together in a few days.
 
-Hey so this is just a personal project so if you are professionally looking at this please don't. (Unless you're super curious and just want to unbiasly see how I write)
+This is a program I made for a party. Because we are in quarantine we are bowling inside an apartment and I didn't like some of the calculators online. I did decide to make this program last minute so it is extremely rushed, but I feel like it proves that I can code quickly to get to a solution. I probably won't bother to make it DRY etc because I have no purpose to anymore, but thought it was worth talking about.
 
-This is a program I made for a party. Part of the party includes bowling but because we are in quarantine we are bowling inside an apartment. I made this silly program to keep track of our scores. The NSFW part is just rude condescending language when people gutter ball.
+The hardest challenges was hard coding an algorithm to deal with Strikes, Spares, Doubles, Turkeys, and any combination of those options back to back. Realistically it wasn't too difficult to code but learning the rules was the "harder" part.
 
 Thanks!
+
+P.S.
+The party was a success!
